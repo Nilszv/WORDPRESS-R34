@@ -1,0 +1,262 @@
+/*
+Theme Name: Custom Theme
+Theme URI: https://example.com
+Author: Your Name
+Author URI: https://example.com
+Description: A custom WordPress theme built from scratch
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: custom-theme
+Tags: custom, responsive, modern
+*/
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004499;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 0;
+}
+
+.site-header .site-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.site-title a {
+    color: #222;
+    text-decoration: none;
+}
+
+.site-description {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Navigation */
+.main-navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.main-navigation a {
+    color: #333;
+    font-weight: 500;
+}
+
+.main-navigation a:hover {
+    color: #0066cc;
+}
+
+/* Main Content */
+.site-main {
+    padding: 3rem 0;
+    min-height: 60vh;
+}
+
+.content-area {
+    margin-bottom: 2rem;
+}
+
+/* Posts & Pages */
+article {
+    margin-bottom: 3rem;
+}
+
+.entry-header {
+    margin-bottom: 1.5rem;
+}
+
+.entry-title {
+    margin-bottom: 0.5rem;
+}
+
+.entry-title a {
+    color: #222;
+}
+
+.entry-title a:hover {
+    color: #0066cc;
+}
+
+.entry-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.entry-content {
+    margin-bottom: 1.5rem;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Comments */
+.comments-area {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Sidebar */
+.sidebar {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.widget {
+    margin-bottom: 2rem;
+}
+
+.widget-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.site-footer a:hover {
+    color: #0066cc;
+}
+
+.site-info {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .site-header .site-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-navigation ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+}
