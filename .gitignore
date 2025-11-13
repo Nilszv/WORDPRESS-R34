@@ -1,0 +1,71 @@
+# WordPress Core Files (if present)
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# WordPress Config
+wp-config.php
+wp-config-sample.php
+
+# Uploaded Files
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+
+# Plugins (keep only custom plugins if needed)
+wp-content/plugins/*
+!wp-content/plugins/.gitkeep
+
+# Themes (except our custom theme)
+wp-content/themes/*
+!wp-content/themes/custom-theme/
+!wp-content/themes/.gitkeep
+
+# Database
+*.sql
+*.sql.gz
+
+# Log Files
+*.log
+error_log
+debug.log
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Composer
+/vendor/
+
+# Environment
+.env
+.env.local
+
+# Docker
+docker-compose.override.yml

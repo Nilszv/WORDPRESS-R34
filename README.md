@@ -2,6 +2,33 @@
 
 A clean, modern, and fully responsive WordPress theme built from scratch. This theme follows WordPress coding standards and best practices.
 
+## 🚀 Quick Start - Run Locally with Docker
+
+**Want to see your site live right now?** This repository includes Docker configuration for instant local development!
+
+### Prerequisites
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### Run Your WordPress Site
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd WORDPRESS-R34
+
+# Start WordPress
+docker-compose up -d
+
+# Visit your site
+# WordPress: http://localhost:8080
+# Database Admin: http://localhost:8081
+```
+
+**That's it!** Complete the WordPress installation wizard, activate the "Custom Theme", and your site is live.
+
+📖 **[See detailed setup instructions in SETUP.md](SETUP.md)**
+
+---
+
 ## Features
 
 - Fully responsive design
@@ -141,6 +168,12 @@ Copy template files from the parent theme to your child theme and modify as need
 - MySQL 5.6 or higher
 
 ### Local Development Setup
+
+**Recommended: Use Docker (Easiest)**
+
+See the [Quick Start section](#-quick-start---run-locally-with-docker) above and [SETUP.md](SETUP.md) for complete Docker instructions.
+
+**Alternative: Traditional Tools**
 
 1. Install a local WordPress environment (XAMPP, MAMP, Local by Flywheel, etc.)
 2. Clone or copy this theme to `wp-content/themes/`
